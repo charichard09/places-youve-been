@@ -31,12 +31,27 @@ travelLog.addDestination(destination);
 let destination2 = new Destination("Japan", "May 2013", "Tokyo", "Kind place");
 travelLog.addDestination(destination2);
 
+
+
+
+
+
+
+
+//First Trial:
 // Display names of individual destinations in our TravelLog object 
-for (const destination of travelLog.destinations.keys()) {
-  let propertyLi = createElement("li");
+// destination === [["location", "Japan"], ["timeOfYear", "May 2013"]...]
+// Object.keys(travelLog.destinations).forEach( function (destination) {
+//   let locationLi = document.createElement("li");
+//   let descriptionLi = document.createElement("li");
 
-  propertyLi.append(destination.location, destination.timeOfYear, destination.landmark, destination.notes);
-  document.querySelector("ul").append(propertyLi);
-}
+//   // locationLi.append(travelLog.destinations["1"].location);
+//   locationLi.append("Hi");
+//   // locationLi.setAttribute("id", "location-li");
+//   // descriptionLi.append(travelLog.destinations["1"].timeOfYear, travelLog.destinations["1"].landmark, travelLog.destinations["1"].notes);
+//   descriptionLi.append("World");
+//   console.log(travelLog.destinations["1"].timeOfYear, travelLog.destinations["1"].landmark, travelLog.destinations["1"].notes)
+//   document.getElementById("append").append(locationLi);
+// // });
 
-// When a user clicks on a place's name, display properties of the individual destinations
+// // When a user clicks on a place's name, display properties of the individual destinations

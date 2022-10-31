@@ -31,11 +31,8 @@ travelLog.addDestination(destination);
 let destination2 = new Destination("Japan", "May 2013", "Tokyo", "Kind place");
 travelLog.addDestination(destination2);
 
-
-
-
-
-
+let li = document.getElementById("li-id");
+li.innerText = travelLog.destinations["1"].location;
 
 
 //First Trial:
